@@ -46,24 +46,28 @@ body {
 
 .tools {
     width: 70%;
-    padding-left: 2rem;
+    padding-left: 5rem;
     display: block;
 
 }
 
 .tools h2 {
-    /* font-size: 24px; */
+
     margin-top: 2rem;
-    font-size: 44px;
+    font-size: 3rem;
     color: #0472e0;
+
 }
 
 h3 {
+
     margin-right: 2rem;
     font-size: 10px;
+
 }
 
 .tools ul li {
+
     margin: 3rem;
     list-style: none;
     display: flex;
@@ -78,6 +82,7 @@ h3 {
     font-weight: bolder;
     display: flex;
     align-items: center;
+
 }
 
 .tools ul li:hover {
@@ -87,10 +92,12 @@ h3 {
     border: 5px solid;
     border-radius: 15px;
     color: #fff;
+
 }
 
 .tools ul li a:hover {
     color: #fff;
+
 }
 
 
@@ -109,42 +116,61 @@ h3 {
 
 .slider {
     position: absolute;
-    width: 60%;
+    width: 100%;
     max-width: 600px;
     margin: 0 auto;
     opacity: 1;
+    margin-bottom: 40rem;
 }
 
 
 .slider img {
     position: absolute;
-    width: 30rem;
+    width: 40rem;
     border-radius: 10px;
     margin-top: 12rem;
     margin-right: 80rem;
     opacity: 0;
-    animation: fade 20s infinite;
+    animation: fade 70s infinite;
+}
+
+
+
+.scan{
+    height: 35rem;
+    margin-top: 90rem;
 }
 
 .slider img:nth-child(1) {
     animation-delay: 0s;
 }
 
-
 .slider img:nth-child(2) {
-    animation-delay: 5s;
-}
-
-.slider img:nth-child(3) {
     animation-delay: 10s;
 }
 
+.slider img:nth-child(3) {
+    animation-delay: 20s;
+}
+
 .slider img:nth-child(4) {
-    animation-delay: 15s;
+    animation-delay: 30s;
 }
 
 .slider img:nth-child(5) {
-    animation-delay: 20s;
+    animation-delay: 40s;
+}
+
+.slider img:nth-child(6) {
+    animation-delay: 50s;
+}
+
+.slider img:nth-child(7) {
+    animation-delay: 60s;
+}
+
+.slider img:nth-child(8) {
+    animation-delay: 70s;
 }
 
 
@@ -153,11 +179,11 @@ h3 {
         opacity: 0;
     }
 
-    4% {
+    10% {
         opacity: 1;
     }
 
-    20% {
+    16% {
         opacity: 1;
     }
 
@@ -165,22 +191,263 @@ h3 {
         opacity: 0;
     }
 
+    50% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+
     100% {
         opacity: 0;
     }
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 1280px) {
+    .logo img{
+        width: 20rem;
+    }
+
+    .tools h2 {
+
+        font-size: 2rem;
+        
+    
+    }
+
+}
+
+@media (max-width: 1214px) {
+
+    .slider {
+        
+        width: 50%;
+        
+    }
+    
+    
+     .slider img {
+        
+        width: 30rem;
+        
+    } 
+
+    .tools ul li:hover {
+        
+        width: 15rem;
+       
+    
+    }
+    
+
+}
+@media (max-width: 1112px) {
+    .tools ul li:hover {
+        
+        width: 13rem;
+        
+    
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    .logo img{
+        width: 15rem;
+    }
+
+    .tools {
+        width: 70%; 
+        padding-left: 1.4rem;
+
+    }
+    .tool-list ul {
+        margin-top: 1rem;
+    
+    
+    }
+    .tools ul li {
+
+        margin: 2rem;
+       
+    }
+
+
+    .tools ul li:hover {
+        
+        width: 13rem;
+        
+    
+    }
+
+    .slider {
+        
+        width: 50%;
+        
+    }
+    
+    
+     .slider img {
+        
+        width: 25rem;
+        
+    } 
+    
+
+}
+
+
+@media (max-width: 815px) {
+
+    .tools h2 {
+
+        font-size: 1rem;
+        
+    
+    }
+
+
+    .tools h3 {
+        font-size: 8px;
+        
+    
+    }
+
+    .tools ul li {
+
+        margin: 2rem;
+       
+    }
+    .tools ul li:hover {
+        
+        width: 11rem;
+        
+    
+    }
+
+
+}
+
+
+@media (max-width: 796px) {
+
+    .logo img{
+        width: 10rem;
+    }
+    .slider {
+        
+        width: 50%;
+        
+    }
+    
+    
+     .slider img {
+        
+        width: 17rem;
+        
+    } 
+
+    .tools ul li:hover {
+        
+        width: 11rem;
+        
+    
+    }
+
+}
+
+@media (max-width: 776px) {
+
+    .slider {
+        
+        width: 40%;
+       
+        
+    }
+    
+    
+     .slider img {
+        
+        width: 20rem;
+        margin-left: 3rem;
+        
+    } 
+
+    .tools ul li:hover {
+        
+        width: 11rem;  
+    
+    }  
+
+}
+
+
+
+ @media (max-width: 772px) {
     .container {
         flex-direction: column;
+        height: 100vh;
+        
     }
 
     .sidebar {
-        width: 100%;
+        width: 40%;
         height: auto;
     }
 
     .main-content {
-        padding: 10px;
+        padding: 8px;
     }
+
+    .tools ul li:hover {
+        
+        width: 11rem;
+        
+    
+    }
+}  
+
+@media (max-width: 440px) {
+
+    .tools ul li {
+
+        margin-left: .5rem;
+       
+    }
+
+
+    .slider {
+        
+        width: 40%;
+        
+    }
+    
+    
+     .slider img {
+        
+        width: 15rem;
+        margin-left: 3rem;
+        margin-bottom: 40rem;
+        
+    } 
+
+    .tools h3 {
+        font-size: 10px;
+        
+    
+    }
+
+    
+    .tools ul li:hover {
+        
+        width: 11rem;
+        
+    
+    }
+
 }
