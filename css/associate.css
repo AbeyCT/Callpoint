@@ -1,0 +1,284 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+
+.color-section {
+    width: 25%;
+    background-color: #2c3e50;
+}
+
+.main-content {
+    display: flex;
+    flex-grow: 1;
+    background-color: #ecf0f1;
+}
+
+.sidebar {
+    width: 35%;
+    padding: 2rem;
+    border-right: 5px solid #264768;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.tools h2 {
+    font-size: 2rem;
+    color: #0472e0;
+    margin-bottom: 1rem;
+}
+
+.tools h3 {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tool-list ul {
+    list-style: none;
+}
+
+.tool-list ul li {
+    margin: 1rem 0;
+}
+
+.tool-list ul li a {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #080808;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.tool-list ul li a img {
+    width: 30px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.tool-list ul li:hover a {
+    background-color: #093f75;
+    color: #fff;
+}
+
+.content {
+    flex-grow: 1;
+    position: relative;
+    background-color: #080808;
+}
+
+.slider {
+    width: 80%;
+    max-width: 600px;
+    padding: 8rem 0 0 .5rem;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+
+.slider img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    position: absolute;
+    opacity: 0;
+    animation: fade 70s infinite;
+}
+
+/* Animation timing for images */
+.slider img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slider img:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.slider img:nth-child(3) {
+    animation-delay: 20s;
+}
+
+.slider img:nth-child(4) {
+    animation-delay: 25s;
+}
+
+.slider img:nth-child(5) {
+    animation-delay: 40s;
+}
+
+.slider img:nth-child(6) {
+    animation-delay: 45s;
+}
+
+.slider img:nth-child(7) {
+    animation-delay: 60s;
+}
+
+.slider img:nth-child(8) {
+    animation-delay: 65s;
+}
+.slider img:nth-child(9) {
+    animation-delay: 75s;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    16% {
+        opacity: 1;
+    }
+    24% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 1280px) {
+    .logo img {
+        max-width: 200px;
+    }
+
+    .tools h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1104px) {
+    .color-section {
+        width: 10%;
+    }
+
+    .sidebar {
+        width: 35%;
+    }
+
+    .content {
+        margin: 0;
+    }
+
+    .slider {
+        padding: 7rem 0 0 4rem;
+    }
+
+    .tool-list ul li {
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 1002px) {
+    .logo img {
+        max-width: 150px;
+    }
+
+    .tools {
+        padding: 1rem;
+    }
+
+    .main-content{
+        height: 100vh;
+    }
+
+    .content {
+        background-color: #ffff;
+        margin-top: 4rem;
+    }
+
+    .slider {
+        max-width: 400px;
+        padding: 4rem 0 0 3rem;
+    }
+}
+
+@media (max-width: 772px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-content {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .tools {
+        padding: 0;
+    }
+
+    .content {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 440px) {
+    .logo img {
+        max-width: 100px;
+    }
+
+    .tools h2 {
+        font-size: 1.2rem;
+    }
+
+    .tools h3 {
+        font-size: 0.8rem;
+    }
+
+    .slider {
+        
+        padding: 4rem 0 0 .5rem;
+    }
+
+    .slider img {
+        max-width: 15rem;
+    }
+
+    .tool-list ul li {
+        margin: 0.5rem 0;
+    }
+
+    .tool-list ul li a {
+        font-size: 0.9rem;
+    }
+}
