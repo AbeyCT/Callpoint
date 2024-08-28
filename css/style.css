@@ -181,6 +181,8 @@ img {
 .home-text p {
   font-size: 1.25rem;
   margin-bottom: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
 }
 
 .home-image img {
@@ -247,6 +249,8 @@ img {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  font-weight: 300;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .feature-item {
@@ -259,6 +263,11 @@ img {
 
 .about-us-content {
   gap: 30px;
+}
+
+.about-text {
+  font-weight: 300;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .about-text h3 {
@@ -301,6 +310,8 @@ img {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  font-weight: 300;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .testimonial-item {
@@ -314,10 +325,16 @@ img {
   padding: 30px;
   background-color: #007bff;
   color: white;
+  height: 210px;
 }
 
 .footer-content {
   gap: 30px;
+}
+
+.footer-logo {
+  display: flex;
+  margin-top: 10px;
 }
 
 .footer-content .logo img {
@@ -345,12 +362,33 @@ img {
 .footer p {
   text-align: center;
   margin-top: 20px;
+  font-size: 15px;
+  text-align: left;
 }
+
+/* .contact{
+  margin-right: 8px;
+  color: #fff; 
+} */
+
+.contact i {
+  margin-right: 8px;
+  color: #fff; 
+}
+
 
 .wwwmt-2 {
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: bolder;
+  text-decoration-style: none;
 }
+
+
+.wwwmt-2 a {
+  text-decoration: none;
+}
+
 
 /* Responsive Design */
 @media (max-width:900px) {
