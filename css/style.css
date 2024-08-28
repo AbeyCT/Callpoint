@@ -55,8 +55,13 @@ img {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
   padding: 20px;
   background-color: #f8f9fa;
+  width: 73%;
+  height: 12px;
 }
 
 .logo img {
@@ -107,6 +112,7 @@ img {
   padding: 10px 20px;
   border-radius: 5px;
   margin-left: 25px;
+  margin-right: -15px;
 }
 
 .nav-link.get-started:hover {
@@ -117,6 +123,7 @@ img {
 
 .grid-container {
   display: grid;
+  margin-top: 50px;
   grid-template-columns: 60% 40%;
   gap: 20px;
 }
@@ -173,6 +180,10 @@ img {
   justify-content: center;
 }
 
+.home-text {
+  margin-bottom: 10px;
+}
+
 .home-text h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
@@ -180,7 +191,7 @@ img {
 
 .home-text p {
   font-size: 1.25rem;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 500;
 }
@@ -201,14 +212,17 @@ img {
 }
 
 .cta-button {
-  display: inline-block;
-  margin-top: 20px;
+  display: inline-block; 
+   margin: 0; 
+   padding: 0;
   padding: 10px 20px;
   background-color: #007bff;
   color: white;
   text-decoration: none;
   border-radius: 5px;
+  /* margin-left: 23px; */
 }
+
 
 .cta-button:hover {
   background-color: black;
@@ -243,6 +257,10 @@ img {
 
 .key-features {
   text-align: center;
+}
+
+.feature-grid h3 {
+  color: orangered;
 }
 
 .feature-grid {
@@ -322,78 +340,91 @@ img {
 }
 
 .footer {
-  padding: 30px;
+  padding: 20px 10px;
   background-color: #007bff;
   color: white;
-  height: 210px;
+  text-align: left;
+  position: relative;
 }
 
-.footer-content {
-  gap: 30px;
-}
-
-.footer-logo {
-  display: flex;
-  margin-top: 10px;
-}
-
-.footer-content .logo img {
-  width: 100px;
-}
-
-.footer-links div {
+.footer-logo img {
+  width: 150px;
   margin-bottom: 20px;
 }
 
-.footer-links h3 {
-  margin-bottom: 10px;
-  
-
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  gap: 30px;
+  margin-bottom: 20px;
 }
 
-
-.footer-links a {
-  display: block;
-  margin-bottom: 9px;
-  text-decoration: none;
-  color: #ffff;
-}
-
-.footer p {
-  text-align: center;
-  margin-top: 20px;
+.footer-parag p {
   font-size: 15px;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.social-media, .footer-links, .contact {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: left;
 }
 
-/* .contact{
-  margin-right: 8px;
-  color: #fff; 
-} */
-
-.contact i {
-  margin-right: 8px;
-  color: #fff; 
+.social-media{
+  align-items: center;
+  margin-bottom: 50px;
+  
 }
 
+.footer-links{
+  margin-bottom: 15px;
+}
 
-.wwwmt-2 {
-  margin-top: 20px;
+.social-media h3, .footer-links h3, .contact h3 {
+  color: rgb(239, 93, 40);
+  margin-bottom: 10px;
+}
+
+.social-media a {
+  color: white;
   font-size: 18px;
-  font-weight: bolder;
-  text-decoration-style: none;
+  margin-right: 15px;
 }
 
-
-.wwwmt-2 a {
+.footer-links a {
+  display: block;
+  margin-bottom: 8px;
   text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+.contact p {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+.contact p a {
+  color: white;
+  text-decoration: none;
+}
+
+.copy-write {
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  margin-top: 20px;
 }
 
 
 /* Responsive Design */
 @media (max-width:900px) {
-
-  /* .header, */
 
   .home-content,
   .key-features,
@@ -458,8 +489,44 @@ img {
   nav #nav-linkget-started {
     background-color: #ffff;
     color: #333;
-    padding: 10px 10px;
+    padding: 10px;
+    margin-right: .5rem;
   }
+
+  .cta-button {
+    margin-left: 15rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+}
+.footer-parag {
+    text-align: center;
+}
+.social-media {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.social-media a {
+  margin: 0 10px;
+  color: #ffff; 
+  font-size: 30px; 
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #8d0a0a; 
+}
+.footer-links, .contact {
+    text-align: center;
+}
+
+.social-media a .fa-x {
+  font-family: "Font Awesome 6 Free"; 
+  font-weight: 900; 
+}
 }
 
 @media only screen and (max-width: 768px) {
@@ -475,6 +542,12 @@ img {
     padding: 0 0 0 10rem;
   
   }
+  .footer-content {
+    gap: 20px;
+}
+.footer-logo img {
+    width: 120px;
+}
 }
 
 @media (max-width: 480px) {
@@ -506,6 +579,10 @@ img {
     right: 3rem;
   }
 
+  .cta-button {
+    margin-left: .5rem;
+  }
+
   .grid-container {
     grid-template-columns: 1fr;
     gap: 5px;
@@ -514,9 +591,23 @@ img {
     font-size: 14px;
   }
   .contact h3{
-    padding: 0 0 0 4rem;
+    padding: 0 0 0 0;
   
   }
+
+  .footer-parag p {
+    font-size: 14px;
+}
+.social-media a {
+    font-size: 16px;
+    margin-right: 10px;
+}
+.footer-links, .contact {
+    min-width: 100%;
+}
+.contact p a {
+    font-size: 14px;
+}
 }
 
 
