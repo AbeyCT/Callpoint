@@ -220,7 +220,6 @@ img {
   color: white;
   text-decoration: none;
   border-radius: 5px;
-  /* margin-left: 23px; */
 }
 
 
@@ -312,12 +311,13 @@ img {
 .why-us-content {
   background-color: #007bff;
   padding: 20px;
-  padding: 30px;
   align-items: center;
 }
 
+
 .mt-2 p{
   font-weight: bolder;
+  margin-bottom: 2rem;
 }
 
 .testimonials {
@@ -378,8 +378,14 @@ img {
 
 .social-media{
   align-items: center;
-  margin-bottom: 50px;
-  
+  margin-top: -7rem; 
+}
+.list li {
+  display: inline-block;
+}
+
+.list li a{
+  font-size: 15px;
 }
 
 .footer-links{
@@ -395,6 +401,10 @@ img {
   color: white;
   font-size: 18px;
   margin-right: 15px;
+}
+
+.social-media li a:hover {
+  color: #0000;
 }
 
 .footer-links a {
@@ -472,14 +482,14 @@ img {
   .hamburger {
     display: flex;
     position: absolute;
-    right: 10rem;
+    right: 2rem;
     top: 20px;
   }
 
   .nav-items.active {
     display: flex;
     background-color: #007bff;
-    right: 10rem;
+    right: 2rem;
     position: absolute;
     top: 20px;
     padding: 10px;
@@ -527,6 +537,19 @@ img {
   font-family: "Font Awesome 6 Free"; 
   font-weight: 900; 
 }
+
+.social-media{
+  margin-top: -.5rem; 
+}
+
+.list li a{
+  font-size: 13px;
+}
+
+
+.footer-content h3{
+  font-size: 19px;
+}
 }
 
 @media only screen and (max-width: 768px) {
@@ -539,7 +562,7 @@ img {
   }
 
   .contact h3{
-    padding: 0 0 0 10rem;
+    padding: 0 0 0 0;
   
   }
   .footer-content {
@@ -547,6 +570,18 @@ img {
 }
 .footer-logo img {
     width: 120px;
+}
+.social-media{
+  margin-top: -.5rem; 
+}
+
+.list li a{
+  font-size: 12px;
+}
+
+
+.footer-content h3{
+  font-size: 17px;
 }
 }
 
@@ -569,14 +604,14 @@ img {
   }
 
   .hamburger {
-    right: 3rem;
+    right: 2rem;
   }
   .center {
     font-size: 30px;
 }
 
   .nav-items.active {
-    right: 3rem;
+    right: 2rem;
   }
 
   .cta-button {
@@ -602,11 +637,22 @@ img {
     font-size: 16px;
     margin-right: 10px;
 }
+
+.footer-content h3{
+  font-size: 15px;
+}
 .footer-links, .contact {
     min-width: 100%;
 }
 .contact p a {
     font-size: 14px;
+}
+.social-media{
+  margin-top: -1rem; 
+}
+
+.list li a{
+  font-size: 11px;
 }
 }
 

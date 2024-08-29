@@ -3,5 +3,5 @@ const navItems = document.querySelector(".nav-items");
 
 hamburger.addEventListener("click", () => {
   navItems.classList.toggle("active");
-  hamburger.classList.toggle("active"); // Toggle the "X" effect
+  hamburger.classList.toggle("active");
 });

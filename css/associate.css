@@ -224,6 +224,10 @@ body {
         max-width: 400px;
         padding: 4rem 0 0 3rem;
     }
+
+    .tool-list ul li:hover a {
+        width: 10rem;
+    }
 }
 
 @media (max-width: 772px) {
