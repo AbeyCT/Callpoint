@@ -217,6 +217,7 @@ img {
    padding: 0;
   padding: 10px 20px;
   background-color: #007bff;
+  font-weight: bolder;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -421,6 +422,10 @@ img {
   text-decoration: none;
   color: white;
   font-size: 15px;
+}
+
+.footer-links a:hover{
+  color: rgb(239, 93, 40);
 }
 
 .contact p {
