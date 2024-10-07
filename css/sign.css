@@ -1,0 +1,253 @@
+
+
+/* Signup Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.signupContainer {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.inputGroup input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.inputGroup input:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #000;
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  color: #000;
+}
+
+/* Mobile Styles (default) */
+
+.signupContainer {
+  margin: 20px auto;
+  padding: 15px;
+}
+
+.inputGroup input {
+  height: 35px;
+}
+
+button[type="submit"] {
+  height: 35px;
+}
+
+/* Tablet Styles */
+
+@media (min-width: 480px) {
+  .signupContainer {
+    margin: 30px auto;
+    padding: 20px;
+  }
+  .inputGroup input {
+    height: 40px;
+  }
+  button[type="submit"] {
+    height: 40px;
+  }
+}
+
+/* Desktop Styles */
+
+@media (min-width: 768px) {
+  .signupContainer {
+    margin: 40px auto;
+    padding: 25px;
+  }
+  .inputGroup input {
+    height: 45px;
+  }
+  button[type="submit"] {
+    height: 45px;
+  }
+}
+
+/* Large Desktop Styles */
+
+@media (min-width: 1024px) {
+  .signupContainer {
+    margin: 50px auto;
+    padding: 30px;
+  }
+  .inputGroup input {
+    height: 50px;
+  }
+  button[type="submit"] {
+    height: 50px;
+  }
+}
+
+
+
+
+/* Signin Styles */
+
+
+.signinContainer {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.inputGroup input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.inputGroup input:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+/* Mobile Styles (default) */
+
+.signinContainer {
+  margin: 20px auto;
+  padding: 15px;
+}
+
+.inputGroup input {
+  height: 35px;
+}
+
+button[type="submit"] {
+  height: 35px;
+}
+
+/* Tablet Styles */
+
+@media (min-width: 480px) {
+  .signinContainer {
+    margin: 30px auto;
+    padding: 20px;
+  }
+  .inputGroup input {
+    height: 40px;
+  }
+  button[type="submit"] {
+    height: 40px;
+  }
+}
+
+/* Desktop Styles */
+
+@media (min-width: 768px) {
+  .signinContainer {
+    margin: 40px auto;
+    padding: 25px;
+  }
+  .inputGroup input {
+    height: 45px;
+  }
+  button[type="submit"] {
+    height: 45px;
+  }
+}
+
+/* Large Desktop Styles */
+
+@media (min-width: 1024px) {
+  .signinContainer {
+    margin: 50px auto;
+    padding: 30px;
+  }
+  .inputGroup input {
+    height: 50px;
+  }
+  button[type="submit"] {
+    height: 50px;
+  }
+}

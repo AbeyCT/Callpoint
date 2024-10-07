@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="css/pay.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Payment Gateway</h2>
+        <form id="paymentForm">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" required>
+            </div>
+
+            <div class="form-group">
+                <label for="paymentMethod">Select Payment Method:</label>
+                <select id="paymentMethod" required>
+                    <option value="" disabled selected>Select Option</option>
+                    <option value="card">Card</option>
+                    <option value="transfer">Transfer</option>
+                </select>
+            </div>
+
+            <!-- Card Details Section -->
+            <div id="cardDetails" class="form-group hidden">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+                
+                <label for="expiry">Expiry Date:</label>
+                <input type="text" id="expiry" placeholder="MM/YY" required>
+                
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" placeholder="123" required>
+            </div>
+
+            <!-- Transfer Option -->
+            <div id="transferDetails" class="hidden">
+                <p>Paystack Transfer Option</p>
+                <!-- Paystack transfer form will go here -->
+            </div>
+
+            <button type="submit" id="submitBtn">Proceed to Payment</button>
+        </form>
+    </div>
+
+    <script src="pay.js"></script>
+</body>
+</html>
